@@ -1,0 +1,14 @@
+syntax = "proto2";
+
+package com.learn.demo.netty_protobuf;
+
+option optimize_for = SPEED;
+option java_package = "com.learn.demo.netty_protobuf";
+option java_outer_classname = "MyDataInfo";
+
+//E:\tools\protobuf\protoc-3.11.4-win64\bin\protoc.exe --java_out=src/main/java src/protobuf/Student.proto
+message Person{
+    required string name = 1;
+    optional int32 age = 2;
+    optional string address = 3;
+}
